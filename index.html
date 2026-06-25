@@ -13,6 +13,16 @@
     justify-content: center;
     min-height: 100vh;
     font-family: 'Inter', system-ui, sans-serif;
+    padding: 24px;
+  }
+  .dash-wrap {
+    width: 100%;
+    max-width: 960px;
+  }
+  .dash-wrap svg {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   /* ── Donut ring draw — r=42, C=264 ── */
@@ -71,7 +81,8 @@
 </head>
 <body>
 
-<svg id="dash" width="960" height="608" viewBox="0 0 960 608"
+<div class="dash-wrap">
+<svg id="dash" viewBox="0 0 960 608"
      xmlns="http://www.w3.org/2000/svg"
      style="display:block; font-family:'Inter',system-ui,sans-serif; overflow:visible;">
 <defs>
@@ -343,6 +354,7 @@
   fill="transparent" cursor="crosshair" clip-path="url(#chartClip)"/>
 
 </svg>
+</div>
 
 <script>
 // ────────────────────────────────────────────
